@@ -1,11 +1,16 @@
 if not game:IsLoaded() then game.Loaded:Wait() end
 
-local games = {
-    [121864768012064] = 'https://api.junkie-development.de/api/v1/luascripts/public/d321c839ee5b02232babbf17b45dd12a763d3849c1cfa9f7e0761b4e62afed3c/download',
-}
+local MBF = {2753915549, 85211729168715, 4442272183, 79091703265657, 7449423635, 100117331123089}
+local FIT = {121864768012064}
 
-if games[game.PlaceId] then
-    loadstring(game:HttpGet(games[game.PlaceId]))()
-else
-    warn("⚠️ Game not supported:", game.PlaceId)
+if MBF then
+    if getgenv().Mode == "Fruit Finder" then
+        loadstring(game:HttpGet("https://api.junkie-development.de/api/v1/luascripts/public/99e33d348cae6453c9c07700f2cfae46a2da46114fc3bb9af4bb66a2a3fb4066/download"))()
+    else
+        not done
+    end
+end
+
+if FIT then
+    loadstring(game:HttpGet("https://api.junkie-development.de/api/v1/luascripts/public/d321c839ee5b02232babbf17b45dd12a763d3849c1cfa9f7e0761b4e62afed3c/download"))()
 end
