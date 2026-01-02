@@ -7,7 +7,7 @@ if MBF then
     if getgenv().Mode == "Fruit Finder" then
         loadstring(game:HttpGet("https://api.junkie-development.de/api/v1/luascripts/public/99e33d348cae6453c9c07700f2cfae46a2da46114fc3bb9af4bb66a2a3fb4066/download"))()
     else
-        not done
+        print("not done")
     end
 end
 
